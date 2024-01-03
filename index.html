@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skrew || سكرو</title>
+    <link rel="icon" type="image/x-icon" href="skrre.jpg">
+    <style>
+                @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@900&display=swap');
+
+        /* Basic CSS for styling the table */
+        body {
+            background-color: #6E54A3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        * {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 16px; /* Set the default font size */
+        }
+
+        table, th, td {
+            border: 1px solid #ff9f00;
+        }
+
+        th, td {
+            padding: 8px; /* Decreased padding for smaller size */
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input[type="text"], input[type="number"] {
+            border: none;
+            color: white;
+            font-family: 'Cairo', sans-serif;
+            width: 100%;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            outline: none;
+            border: none;
+            color: white;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+
+        /* Media query for smaller screens (phones) */
+        @media screen and (max-width: 480px) {
+            table {
+                font-size: 9px; /* Decrease font size for phones */
+            }
+            th, td {
+                padding: 4px; /* Further decreased padding for phones */
+            }
+        }
+
+        /* Your custom CSS styles */
+        /* ... */
+        
+        body > table > thead > tr > td:nth-child(5),
+        body > table > tbody > tr:nth-child(6) > td {
+            background-color: #ff9f00;
+        }
+
+        #row1_col1,
+        #row1_col2,
+        #row1_col3,
+        #row1_col4 {
+            background-color: #66011c;
+        }
+        body > table > thead > tr,
+        body > table > thead > tr,
+        body > table > thead > tr,
+        body > table > thead > tr{
+            background-color: #66011c;
+        } 
+        #m4t0t,
+        #m4t43t,
+        #m4t2t,
+        #m4t4t {
+            background-color: #58a404;
+            border-left: 1px solid #58a404;
+            border-top: 1px solid #58a404;
+            border-right: 1px solid #58a404;
+            text-align: left;
+            color: white;
+        } 
+        #m4t1t{
+            background-color: #58a404;
+            border-left: 1px solid #58a404;
+            border-top: 1px solid #58a404;
+            border-right: 1px solid #58a404;
+            text-align: right;
+            color: white;
+        }
+        #row2_col1,
+        #row2_col2,
+        #row2_col3,
+        #row2_col4,
+        #row3_col1,
+        #row3_col2,
+        #row3_col3,
+        #row3_col4,
+        #row4_col1,
+        #row4_col2,
+        #row4_col3,
+        #row4_col4,
+        #row5_col1,
+        #row5_col2,
+        #row5_col3,
+        #row5_col4,
+        #row6_col1,
+        #row6_col2,
+        #row6_col3,
+        #row6_col4,
+        #score1,
+        #score2,
+        #score3,
+        #score4 {
+            background-color: #24183e;
+        }
+
+        body > table > tbody > tr:nth-child(1) > td:nth-child(1),
+        body > table > tbody > tr:nth-child(1) > td:nth-child(2),
+        body > table > tbody > tr:nth-child(1) > td:nth-child(3),
+        body > table > tbody > tr:nth-child(1) > td:nth-child(4),
+        body > table > tbody > tr:nth-child(2) > td:nth-child(1),
+        body > table > tbody > tr:nth-child(2) > td:nth-child(2),
+        body > table > tbody > tr:nth-child(2) > td:nth-child(3),
+        body > table > tbody > tr:nth-child(2) > td:nth-child(4),
+        body > table > tbody > tr:nth-child(3) > td:nth-child(1),
+        body > table > tbody > tr:nth-child(3) > td:nth-child(2),
+        body > table > tbody > tr:nth-child(3) > td:nth-child(3),
+        body > table > tbody > tr:nth-child(3) > td:nth-child(4),
+        body > table > tbody > tr:nth-child(4) > td:nth-child(1),
+        body > table > tbody > tr:nth-child(4) > td:nth-child(2),
+        body > table > tbody > tr:nth-child(4) > td:nth-child(3),
+        body > table > tbody > tr:nth-child(4) > td:nth-child(4),
+        body > table > tbody > tr:nth-child(5) > td:nth-child(1),
+        body > table > tbody > tr:nth-child(5) > td:nth-child(2),
+        body > table > tbody > tr:nth-child(5) > td:nth-child(3),
+        body > table > tbody > tr:nth-child(5) > td:nth-child(4) {
+            background-color: #24183e;
+        }
+
+        #score1,
+        #score2,
+        #score3,
+        #score4 {
+            color: white;
+        }
+
+        body > table > tbody > tr:nth-child(1) > td:nth-child(5),
+        body > table > tbody > tr:nth-child(2) > td:nth-child(5),
+        body > table > tbody > tr:nth-child(3) > td:nth-child(5),
+        body > table > tbody > tr:nth-child(4) > td:nth-child(5),
+        body > table > tbody > tr:nth-child(5) > td:nth-child(5) {
+            background-color: #1406ce;
+            color: white;
+        }
+
+        .highlight {
+            background-color: #58a404;
+        }
+        h1 {
+            color: white; /* Text color */
+            font-size: 24px; /* Font size */
+            margin-top: 1px; /* Margin at the bottom */
+        }
+        /* Add additional CSS styles here as needed */
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr id="h33">
+                <td id="m4t0t"></td>
+                <td id="m4t1t"></td>
+                <td id="m4t2t">سكرو</td>
+                <td id="m4t43t"></td>
+                <td id="m4t4t"></td>
+            </tr>
+            <tr id="h222">
+                <td><input type="text" id="row1_col1" class="mmr"></td>
+                <td><input type="text" id="row1_col2"></td>
+                <td><input type="text" id="row1_col3"></td>
+                <td><input type="text" id="row1_col4"></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="number" id="row2_col1"></td>
+                <td><input type="number" id="row2_col2"></td>
+                <td><input type="number" id="row2_col3"></td>
+                <td><input type="number" id="row2_col4"></td>
+                <td>الجولة الأولى</td>
+            </tr>
+            <tr>
+                <td><input type="number" id="row3_col1"></td>
+                <td><input type="number" id="row3_col2"></td>
+                <td><input type="number" id="row3_col3"></td>
+                <td><input type="number" id="row3_col4"></td>
+                <td>الجولة الثانية</td>
+            </tr>
+            <tr>
+                <td><input type="number" id="row4_col1"></td>
+                <td><input type="number" id="row4_col2"></td>
+                <td><input type="number" id="row4_col3"></td>
+                <td><input type="number" id="row4_col4"></td>
+                <td id="ss">الجولة الثالثة</td>
+            </tr>
+            <tr>
+                <td><input type="number" id="row5_col1"></td>
+                <td><input type="number" id="row5_col2"></td>
+                <td><input type="number" id="row5_col3"></td>
+                <td><input type="number" id="row5_col4"></td>
+                <td>الجولة الرابعة</td>
+            </tr>
+            <tr>
+                <td><input type="number" id="row6_col1"></td>
+                <td><input type="number" id="row6_col2"></td>
+                <td><input type="number" id="row6_col3"></td>
+                <td><input type="number" id="row6_col4"></td>
+                <td>الجولة الخامسة</td>
+            </tr>
+            <tr>
+                <th id="score1" class="mnr"></th>
+                <th id="score2"></th>
+                <th id="score3"></th>
+                <th id="score4"></th>
+                <td>المجموع</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>function calculateSums() {
+        const column1IDs = ['row6_col1', 'row5_col1', 'row4_col1', 'row3_col1', 'row2_col1'];
+        const column2IDs = ['row6_col2', 'row5_col2', 'row4_col2', 'row3_col2', 'row2_col2'];
+        const column3IDs = ['row6_col3', 'row5_col3', 'row4_col3', 'row3_col3', 'row2_col3'];
+        const column4IDs = ['row6_col4', 'row5_col4', 'row4_col4', 'row3_col4', 'row2_col4'];
+        let sum1 = 0;
+        let sum2 = 0;
+        let sum3 = 0;
+        let sum4 = 0;
+        for (let i = 0; i < column1IDs.length; i++) {
+            const value1 = parseFloat(document.getElementById(column1IDs[i]).value) || 0;
+            const value2 = parseFloat(document.getElementById(column2IDs[i]).value) || 0;
+            const value3 = parseFloat(document.getElementById(column3IDs[i]).value) || 0;
+            const value4 = parseFloat(document.getElementById(column4IDs[i]).value) || 0;
+
+            sum1 += value1;
+            sum2 += value2;
+            sum3 += value3;
+            sum4 += value4;            
+        }
+    
+        document.getElementById('score1').textContent = sum1;
+        document.getElementById('score2').textContent = sum2;
+        document.getElementById('score3').textContent = sum3;
+        document.getElementById('score4').textContent = sum4;
+    
+        checkAndColorScore3();
+    
+        const score1BackgroundColor = document.getElementById('score1').style.backgroundColor;
+        const mmrInput = document.querySelector('.mmr');
+        const mnrInput = document.querySelector('.mnr');
+        const score1 = parseFloat(document.getElementById('score1').textContent);
+        const score2 = parseFloat(document.getElementById('score2').textContent);
+        const score3 = parseFloat(document.getElementById('score3').textContent);
+        const score4 = parseFloat(document.getElementById('score4').textContent);
+        const thScore1 = document.querySelector('th#score1');
+        const thScore2 = document.querySelector('th#score2');
+        const thScore3 = document.querySelector('th#score3');
+        const thScore4 = document.querySelector('th#score4');
+        }
+    
+    function checkAndColorScore3() {
+        const score1 = parseFloat(document.getElementById('score1').textContent);
+        const score2 = parseFloat(document.getElementById('score2').textContent);
+        const score3 = parseFloat(document.getElementById('score3').textContent);
+        const score4 = parseFloat(document.getElementById('score4').textContent);
+        const thScore1 = document.querySelector('th#score1');
+        const thScore2 = document.querySelector('th#score2');
+        const thScore3 = document.querySelector('th#score3');
+        const thScore4 = document.querySelector('th#score4');
+        const scores = [score1, score2, score3, score4];
+const thScores = [thScore1, thScore2, thScore3, thScore4];
+
+const minScore = Math.min(...scores);
+const minScoreIndices = scores.reduce((indices, score, index) => {
+    if (score === minScore) indices.push(index);
+    return indices;
+}, []);
+
+for (let i = 0; i < scores.length; i++) {
+    if (minScoreIndices.includes(i)) {
+        thScores[i].style.backgroundColor = '#58a404';
+    } else {
+        thScores[i].style.backgroundColor = '';
+    }
+}
+
+}
+    
+    const inputFields = document.querySelectorAll('input[type="number"]');
+    inputFields.forEach(input => {
+        input.addEventListener('input', calculateSums);
+    });
+    
+    calculateSums();
+    
+    const numberInputs = document.querySelectorAll('input[type="number"]');
+    const textInputs = document.querySelectorAll('input[type="text"]');
+    
+    function updateBackgroundColor(input) {
+        const inputValue = parseInt(input.value);
+        if(inputValue === 0) {
+            input.style.backgroundColor = '#58a404';
+            input.parentElement.style.backgroundColor = '#58a404';
+        } else {
+            input.style.backgroundColor = '';
+            input.parentElement.style.backgroundColor = '';
+        }
+    }
+    
+    numberInputs.forEach(input => {
+        input.addEventListener('input', () => {
+            input.value = input.value.replace(/[^0-9]/g, '');
+            updateBackgroundColor(input);
+        });
+    });
+    
+    textInputs.forEach(input => {
+        input.addEventListener('input', () => {
+            input.value = input.value.replace(/[0-9]/g, '');
+        });
+    });
+    
+    numberInputs.forEach(input => {
+        updateBackgroundColor(input);
+    });
+    </script>
+    </body>
+</html>
